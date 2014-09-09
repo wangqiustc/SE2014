@@ -1,7 +1,7 @@
 /**************************************************************************************************/
 /* Copyright (C) WangQi, SSE@USTC, 2014-2015                                                      */
 /*                                                                                                */
-/*  FILE NAME             :  menu.c                                                             */
+/*  FILE NAME             :  menu.c                                                               */
 /*  PRINCIPAL AUTHOR      :  Mengning,WangQi                                                      */
 /*  SUBSYSTEM NAME        :  menu                                                                 */
 /*  MODULE NAME           :  menu                                                                 */
@@ -29,8 +29,8 @@ int Help();
 
 typedef struct DataNode
 {
-    char*   cmd;
-    char*   desc;
+    char    *cmd;
+    char    *desc;
     int     (*handler)();
     struct  DataNode *next;
 } tDataNode;
@@ -56,7 +56,6 @@ static tDataNode head[] =
 void main()
 {
    /* cmd line begins */
-
     const char *help = "help";
     while(1)
     {
@@ -80,7 +79,7 @@ void main()
                 break;
             }
             p = p->next;
-	}	
+	 }	
             if(p == NULL) 
            {
             printf("This is a wrong command!\n ");
