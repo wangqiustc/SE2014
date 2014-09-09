@@ -38,7 +38,7 @@ typedef struct DataNode
 
 static tDataNode head[] = 
 {
-    {"help", "this is help command", Help,&head[1]},
+        {"help", "this is help command", Help,&head[1]},
 	{"dir", "this is dir command", Help,&head[2]},
 	{"mdelete", "this is mdelete command", Help, &head[3]},
 	{"qc", "this is qc command", Help, &head[4]},
@@ -51,10 +51,8 @@ static tDataNode head[] =
 	{"exit", "this is exit command", Help, &head[11]},
 	{"mget", "this is mget command", Help, &head[12]},
 	{"glob", "this is glob command", Help, &head[13]},
-    {"get", "this is get command", NULL, NULL}
+        {"get", "this is get command", NULL, NULL}
 };
-
-
 
 void main()
 {
