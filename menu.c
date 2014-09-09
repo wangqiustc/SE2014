@@ -18,7 +18,6 @@
  *
  */
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -57,18 +56,19 @@ static tDataNode head[] =
 void main()
 {
    /* cmd line begins */
-	const char *help = "help";
+
+    const char *help = "help";
     while(1)
     {
         char cmd[CMD_MAX_LEN];
         printf("Please input a command > ");
         scanf("%s", cmd);
         tDataNode *p = head;
-			if(strcmp(cmd,help)==0)
-			{
-                 Help();
-                 continue;
-			}
+	if(strcmp(cmd,help)==0)
+	{
+         Help();
+         continue;
+         }
 
         while(p != NULL)
         {
@@ -80,12 +80,11 @@ void main()
                 break;
             }
             p = p->next;
-		}
-		
-        if(p == NULL) 
-        {
+	}	
+            if(p == NULL) 
+           {
             printf("This is a wrong command!\n ");
-        }
+           }
     }
 }
 
