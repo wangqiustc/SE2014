@@ -60,7 +60,7 @@ void main()
     while(1)
     {
         char cmd[CMD_MAX_LEN];
-        printf("Please input a command > ");
+        printf("Please input a command,if you don't know all the commands,please input help> ");
         scanf("%s", cmd);
         tDataNode *p = head;
 	if(strcmp(cmd,help)==0)
