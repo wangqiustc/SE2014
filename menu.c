@@ -78,10 +78,10 @@ void main()
             }
             p = p->next;
 	 }	
-            if(p == NULL) 
-           {
-                printf("This is a wrong command!\n ");
-           }
+        if(p == NULL) 
+        {
+            printf("This is a wrong command!\n ");
+        }
     }
 }
 
