@@ -55,7 +55,7 @@ static tDataNode head[] =
 
 void main()
 {
-   /* cmd line begins */
+    /* cmd line begins */
     const char *help = "help";
     while(1)
     {
@@ -65,24 +65,22 @@ void main()
         tDataNode *p = head;
 	if(strcmp(cmd,help)==0)
 	{
-         Help();
-         continue;
+             Help();
+             continue;
          }
 
         while(p != NULL)
-        {
-		
+        {	
             if(strcmp(p->cmd, cmd)==0)
             {
-                printf("%s - %s\n", p->cmd, p->desc);
-               
+                printf("%s - %s\n", p->cmd, p->desc);  
                 break;
             }
             p = p->next;
 	 }	
             if(p == NULL) 
            {
-            printf("This is a wrong command!\n ");
+                printf("This is a wrong command!\n ");
            }
     }
 }
