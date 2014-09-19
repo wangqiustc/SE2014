@@ -34,11 +34,11 @@ tDataNode * FindCmd(tDataNode * head,char * cmd)
     while(p != NULL)
     {
         if(strcmp(p->cmd, cmd)==0)
-            {
-                return p;
-                break;
-            }
-            p = p->next;
+		{
+		    return p;
+			break;
+		}
+        p = p->next;
 	}
 	return NULL;
 }
