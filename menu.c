@@ -71,7 +71,7 @@ void main()
 
         while(p != NULL)
         {	
-            if(strcmp(p->cmd, cmd)==0)
+            if(strcmp(p->cmd, cmd) == 0)
             {
                 printf("%s - %s\n", p->cmd, p->desc);  
                 break;
